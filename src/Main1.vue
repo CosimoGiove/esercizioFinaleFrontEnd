@@ -3,12 +3,14 @@ import { store } from './store'
 import descrizione from './components/descrizione.vue';
 import icone from './components/icone.vue';
 import VisitaLeStrutture from './components/VisitaLeStrutture.vue'
+import ServiziPrincipali from './components/ServiziPrincipali.vue';
 export default {
     name: "_main",
     components: {
         icone,
         descrizione,
         VisitaLeStrutture,
+        ServiziPrincipali,
     },
     data() {
         return {
@@ -119,11 +121,12 @@ export default {
                         <div class="play">
                             <img src="../public/img/play-icon.png" alt="scrivania">
                         </div>
-
                     </div>
                 </div>
-
             </div>
+        </section>
+        <section>
+            <ServiziPrincipali></ServiziPrincipali>
         </section>
     </main>
 </template>
@@ -247,7 +250,8 @@ main {
     background-size: cover;
     padding-bottom: 80px;
 }
-.play{
+
+.play {
     margin-top: 30px;
     color: #358fc4;
 }
