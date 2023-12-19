@@ -74,5 +74,12 @@ export const store = reactive({
             titolo:"mediacal counseling",
             descrizione:"sed ut perspiciatis unde omnis iste natus error sit voluptam sit amet consectetur adipisicing",
         },
-    ]
+    ],
+    strutture: [
+        {
+            img:"./public/img/icon-7.png",
+            titolo: "tour our facilities",
+            descrizione: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.Voluptas voluptatum nam consecteturvoluptatem,animi,Voluptas voluptatum nam consectetur,animi,Voluptas voluptatum nam consectetur"
+        }
+    ],
 })

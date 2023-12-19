@@ -2,11 +2,13 @@
 import { store } from './store'
 import descrizione from './components/descrizione.vue';
 import icone from './components/icone.vue';
+import VisitaLeStrutture from './components/VisitaLeStrutture.vue'
 export default {
     name: "_main",
     components: {
         icone,
         descrizione,
+        VisitaLeStrutture,
     },
     data() {
         return {
@@ -40,7 +42,6 @@ export default {
         <section>
             <div class="contenitoremain sezione1">
                 <div class="descrizione" v-for="informazioni in store.info">
-                    <!-- <descrizione :titolo="informazioni.titolo" :descrizione="informazioni.descrizione"></descrizione> -->
                     <h2>Welcome to Avada Health</h2>
                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.Voluptas voluptatum nam
                         consecteturvoluptatem,animi,Voluptas voluptatum nam consectetur</p>
@@ -105,7 +106,24 @@ export default {
                     </div>
                 </div>
             </div>
+        </section>
+        <section>
+            <div class="sezione4">
+                <div class="contenitoremain">
+                    <div class="descrizione infodottore" v-for="info in store.strutture">
+                        <img :src="info.img" :alt="info.titolo">
+                        <div v-for="struttura in store.strutture">
+                            <VisitaLeStrutture :immagine="struttura.img" :titolo="struttura.titolo"
+                                :descrizione="struttura.descrizione"></VisitaLeStrutture>
+                        </div>
+                        <div class="play">
+                            <font-awesome-icon icon="fa-solid fa-circle-play" />
+                        </div>
 
+                    </div>
+                </div>
+
+            </div>
         </section>
     </main>
 </template>
@@ -207,14 +225,27 @@ main {
 
 .sezione3 {
     padding-top: 80px;
-    .servizi{
+    padding-bottom: 80px;
+
+    .servizi {
         display: flex;
         flex-wrap: wrap;
     }
-    .servizidottore{
-        width: calc(100% / 3 );
+
+    .servizidottore {
+        width: calc(100% / 3);
         text-align: center;
         margin-top: 80px;
     }
+}
+
+.sezione4 {
+    background-color: lightblue;
+    padding-top: 80px;
+}
+.play{
+    margin-top: 10px;
+    font-size: 50px;
+    color: #358fc4;
 }
 </style>
