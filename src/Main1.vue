@@ -40,7 +40,10 @@ export default {
         <section>
             <div class="contenitoremain sezione1">
                 <div class="descrizione" v-for="informazioni in store.info">
-                    <descrizione :titolo="informazioni.titolo" :descrizione="informazioni.descrizione"></descrizione>
+                    <!-- <descrizione :titolo="informazioni.titolo" :descrizione="informazioni.descrizione"></descrizione> -->
+                    <h2>Welcome to Avada Health</h2>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.Voluptas voluptatum nam
+                        consecteturvoluptatem,animi,Voluptas voluptatum nam consectetur</p>
                 </div>
                 <div class="contenitoreicone">
                     <div v-for="icone in store.icona">
@@ -90,6 +93,17 @@ export default {
         </section>
         <section>
             <div class="sezione3">
+                <div class="contenitoremain">
+                    <div class="descrizione infodottore" v-for="info in store.servizi">
+                        <img :src="info.img" :alt="info.titolo">
+                        <descrizione :titolo="info.titolo" :descrizione="info.descrizione"></descrizione>
+                    </div>
+                    <div class="servizi">
+                        <div class="servizidottore" v-for="icone in store.serviziDottore">
+                            <icone :img="icone.img" :titolo="icone.titolo" :descrizione="icone.descrizione"></icone>
+                        </div>
+                    </div>
+                </div>
             </div>
 
         </section>
@@ -104,6 +118,18 @@ main {
 .sezione1 {
     padding-bottom: 40px;
     padding-top: 80px;
+
+    .descrizione h2 {
+        font-size: 35px;
+        margin-bottom: 20px;
+    }
+
+    .descrizione p {
+        width: 65%;
+        margin: 0 auto;
+        line-height: 40px;
+        font-size: 18px;
+    }
 }
 
 .contenitoremain {
@@ -125,6 +151,7 @@ main {
 .sezione2 {
     background-color: #f7f7f7;
     padding-top: 80px;
+    padding-bottom: 80px;
 
     .carddottore {
         display: flex;
@@ -140,34 +167,54 @@ main {
         background-color: white;
         margin-top: 80px;
     }
-    .didascalia{
+
+    .didascalia {
         padding-left: 20px;
         padding-right: 20px;
 
     }
-    .nome{
+
+    .nome {
         text-transform: uppercase;
         margin-bottom: 10px;
     }
-    .infolavoro{
+
+    .infolavoro {
         margin-top: 30px;
         line-height: 30px;
         margin-bottom: 30px;
     }
-    .social{
+
+    .social {
         font-size: 35px;
         padding-bottom: 30px;
     }
-    .twitter{
+
+    .twitter {
         margin-left: 10px;
         margin-right: 10px;
-        color:#54acee
+        color: #54acee
     }
-    .facebook{
+
+    .facebook {
         color: #3c5998;
     }
-    .instagram{
-        color:#3f729b
+
+    .instagram {
+        color: #3f729b
+    }
+}
+
+.sezione3 {
+    padding-top: 80px;
+    .servizi{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .servizidottore{
+        width: calc(100% / 3 );
+        text-align: center;
+        margin-top: 80px;
     }
 }
 </style>
