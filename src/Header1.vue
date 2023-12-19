@@ -56,7 +56,7 @@ header {
 .contenitoreheader {
     display: flex;
     justify-content: space-between;
-    width: 90%;
+    width: 95%;
     margin: 0 auto;
     align-items: center;
     padding-top: 20px;
@@ -85,7 +85,7 @@ button {
 }
 
 .jumbotron {
-    width: 56%;
+    width: 60%;
     margin: 0 auto;
     margin-top: 122px;
 }
