@@ -29,7 +29,7 @@ export const store = reactive({
             descrizione: "sed ut perspiciatis unde omnis iste natus error sit voluptam",
         },
     ],
-    InfoDottore: [
+    Dottore: [
         {
             img:"./public/img/icon-5.png",
             titolo: "Meet our doctors",
