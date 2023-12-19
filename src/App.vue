@@ -15,8 +15,8 @@ export default{
 </script>
 
 <template>
-  <Main1></Main1>
   <Header1></Header1>
+  <Main1></Main1>
   <footer1></footer1>
 </template>
 
