@@ -117,7 +117,7 @@ export default {
                                 :descrizione="struttura.descrizione"></VisitaLeStrutture>
                         </div>
                         <div class="play">
-                            <font-awesome-icon icon="fa-solid fa-circle-play" />
+                            <img src="../public/img/play-icon.png" alt="scrivania">
                         </div>
 
                     </div>
@@ -240,12 +240,15 @@ main {
 }
 
 .sezione4 {
-    background-color: lightblue;
     padding-top: 80px;
+    color: white;
+    background-image: url(../public/img/paralax-bg-tour-facilities.jpg);
+    background-position: center;
+    background-size: cover;
+    padding-bottom: 80px;
 }
 .play{
-    margin-top: 10px;
-    font-size: 50px;
+    margin-top: 30px;
     color: #358fc4;
 }
 </style>
