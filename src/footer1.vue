@@ -23,8 +23,8 @@ export default {
                     reparti: ["Cardiology", "Pediactrics", "Diabetes Care", "Pre-Natal Care", "Ultrasound Echocardiogram"
                     ]
                 }
-            ]
-
+            ],
+            copyright: ["Copyright 2012 - 2020 |", "Avada Theme by Theme Fusion |", "All Rights Reserved |", "Powered by WordPress"]
         }
     }
 }
@@ -103,9 +103,23 @@ export default {
                 </div>
             </div>
         </section>
-        <section>
-            <div>
+        <section class="sezione2footer">
+            <div class="copyright">
+                <div>
+                    <div class="iconacopy">
+                        <font-awesome-icon icon="fa-regular fa-copyright" />
+                    </div>
 
+                    <ul class="iconacopy">
+                        <li v-for="copy in copyright">
+                            {{ copy }}
+                        </li>
+                    </ul>
+
+                </div>
+                <div>
+
+                </div>
             </div>
         </section>
     </footer>
@@ -117,12 +131,13 @@ export default {
     justify-content: start;
     width: 95%;
     margin: 80px auto;
-    .btnfooter{
+
+    .btnfooter {
         text-transform: uppercase;
-        padding: 5px 20px;
+        padding: 10px 30px;
         margin-top: 20px;
         border: 1px solid black;
-        color:#333333;
+        color: #333333;
         background-color: white;
     }
 
@@ -130,8 +145,11 @@ export default {
         display: flex;
         width: 33%;
     }
-    .luogo, .telefono,.repartospecifico{
-        color:#9d9d9d;
+
+    .luogo,
+    .telefono,
+    .repartospecifico {
+        color: #9d9d9d;
         margin-left: 10px;
     }
 
@@ -222,4 +240,21 @@ export default {
         margin-top: 20px;
     }
 }
-</style>
+
+.sezione2footer {
+    background-color: #f7f7f7;
+    .copyright{
+        width: 95%;
+        margin: 0 auto;
+        padding: 20px 0px;
+    }
+
+    .iconacopy {
+        display: inline-block;
+        font-size: 13px;
+    }
+
+    ul li {
+        display: inline-block;
+    }
+}</style>
