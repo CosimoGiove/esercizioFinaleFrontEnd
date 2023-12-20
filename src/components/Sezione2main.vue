@@ -119,6 +119,7 @@ export default{
         margin-top: 30px;
         line-height: 30px;
         margin-bottom: 30px;
+        color: #a2aaaf;
     }
 
     .social {

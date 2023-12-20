@@ -37,7 +37,7 @@ export default {
             </h1>
             <p>
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptas voluptatum nam consectetur voluptatem,
-                animi,voluplatum namvoluptatem, animi,voluplatum
+                animi,voluplatum
             </p>
             <button>Learn more</button>
         </div>

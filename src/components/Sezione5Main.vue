@@ -53,7 +53,7 @@ export default {
 
     .esperto {
         background-color: #3597c3;
-        padding: 50px 50px;
+        padding: 50px 10px;
         width: 100%;
 
     }

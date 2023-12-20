@@ -28,6 +28,7 @@ export default {
 .descrizione{
     line-height: 35px;
     margin-top: 20px;
+    color: #a2aaaf;
 }
 .contenitore{
     padding-right: 20px;
