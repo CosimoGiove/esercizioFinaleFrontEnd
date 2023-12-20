@@ -76,7 +76,7 @@ export default {
     }
 
     #data {
-        width: 223px;
+        width: 210px;
         padding: 3px;
         margin-top: 30px;
     }
