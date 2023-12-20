@@ -86,14 +86,14 @@ export const store = reactive({
         {
             titolo: "Emergency Care",
             img: "../../public/img/wave-divider.png",
-            testo: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quasi ut aspernatur nobis ipsam ad quos, voluptate consequatur modi nostrum mollitia doloribus deleniti autem aliquid obcaecati laborum deleniti autem aliquid obcaecati laborum",
+            testo: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quasi ut aspernatur nobis ipsam ad quos, voluptate consequatur modi nostrum mollitia doloribus deleniti autem aliquid obcaecati laborum",
         },
     ],
     espertodiagnostico: [
         {
             titolo: "Emergency Care",
             img: "../../public/img/wave-divider.png",
-            testo: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quasi ut aspernatur nobis ipsam ad quos, voluptate consequatur modi nostrum mollitia doloribus deleniti autem aliquid obcaecati laborum deleniti autem aliquid obcaecati laborum",
+            testo: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quasi ut aspernatur nobis ipsam ad quos, voluptate consequatur modi nostrum mollitia doloribus deleniti autem aliquid obcaecati",
         }
 
     ],
@@ -101,7 +101,28 @@ export const store = reactive({
         {
             titolo: "Emergency Care",
             img: "./public/img/wave-divider.png",
-            testo: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quasi ut aspernatur nobis ipsam ad quos, voluptate consequatur modi nostrum mollitia doloribus deleniti autem aliquid obcaecati laborum deleniti autem aliquid obcaecati laborum",
+            testo: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quasi ut aspernatur nobis ipsam ad quos, voluptate consequatur modi nostrum mollitia doloribus deleniti autem aliquid obcaecati laborum",
+        },
+    ],
+    appuntamenti: [
+        {
+            titolo: "Make An Appointment",
+            descrizione: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.Voluptas voluptatum nam consecteturvoluptatem,animi,Voluptas voluptatum nam consectetur,Voluptas voluptatum nam consectetur"
+
+        }
+    ],
+    imgcarosello:[
+        {
+            img:"./public/img/client-logos-1-200x188.png"
+        },
+        {
+            img:"./public/img/client-logos-2-200x188.png"
+        },
+        {
+            img:"./public/img/client-logos-3-200x188.png"
+        },
+        {
+            img:"./public/img/client-logos-4-200x188.png"
         },
     ]
 
