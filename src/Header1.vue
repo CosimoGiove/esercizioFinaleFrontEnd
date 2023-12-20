@@ -39,7 +39,7 @@ export default {
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptas voluptatum nam consectetur voluptatem,
                 animi,voluplatum
             </p>
-            <button>Learn more</button>
+            <button class="bottone">Learn more</button>
         </div>
     </header>
 </template>
@@ -80,6 +80,7 @@ button {
     color: white;
     border: none;
     text-transform: uppercase;
+    cursor: pointer;
 
 
 }
@@ -102,4 +103,17 @@ img {
 
 .jumbotron h1 {
     font-size: 60px;
-}</style>
+}
+.bottone{
+    animation: bottone 5s infinite;
+}
+/* keyframe */
+@keyframes bottone {
+    0%{transform: rotate(0deg);}
+    20%{transform: rotate(10deg); box-shadow: 3px 3px 3px 3px black;}
+    40%{transform: rotate(0deg); box-shadow: 3px 3px 3px 1px black}
+    60%{transform: rotate(-10deg);box-shadow: 3px 3px 3px 3px black;}
+    100%{transform: rotate(0deg);}
+    
+}
+</style>

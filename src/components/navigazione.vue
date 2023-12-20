@@ -21,6 +21,9 @@ export default{
 li{
     list-style: none;
 }
+a:hover{
+    color: #3aafbf;
+}
 a{
     text-decoration: none;
     color: white;

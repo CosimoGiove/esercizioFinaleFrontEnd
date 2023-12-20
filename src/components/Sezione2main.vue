@@ -1,13 +1,13 @@
 <script>
 import descrizione from './descrizione.vue';
 import { store } from '../store';
-export default{
-    name:"sezione2main",
-    components:{
+export default {
+    name: "sezione2main",
+    components: {
         descrizione,
     },
-    data(){
-        return{
+    data() {
+        return {
             store,
             infoDottore: [
                 {
@@ -34,45 +34,45 @@ export default{
 }
 </script>
 <template>
-      <section>
-            <div class="sezione2">
-                <div class="contenitoremain">
-                    <div class="descrizione infodottore" v-for="info in store.Dottore">
-                        <img :src="info.img" alt="">
-                        <descrizione :titolo="info.titolo" :descrizione="info.descrizione"></descrizione>
-                    </div>
+    <section>
+        <div class="sezione2">
+            <div class="contenitoremain">
+                <div class="descrizione infodottore" v-for="info in store.Dottore">
+                    <img :src="info.img" alt="">
+                    <descrizione :titolo="info.titolo" :descrizione="info.descrizione"></descrizione>
                 </div>
-                <div class="carddottore contenitoremain">
-                    <div v-for="dottore in infoDottore" class="card">
-                        <div class="immaginedottore">
-                            <img :src="dottore.img" :alt="dottore.nome">
-                            <div class="didascalia">
-                                <div class="nome">
-                                    {{ dottore.nome }}
-                                </div>
-                                <div>
-                                    {{ dottore.lavoro }}
-                                </div>
-                                <div class="infolavoro">
-                                    {{ dottore.info }}
-                                </div>
-                                <div class="social">
-                                    <span class="facebook">
-                                        <font-awesome-icon icon="fa-brands fa-square-facebook" />
-                                    </span>
-                                    <span class="twitter">
-                                        <font-awesome-icon icon="fa-brands fa-square-twitter" />
-                                    </span>
-                                    <span class="instagram">
-                                        <font-awesome-icon icon="fa-brands fa-square-instagram" />
-                                    </span>
-                                </div>
+            </div>
+            <div class="carddottore contenitoremain">
+                <div v-for="dottore in infoDottore" class="card">
+                    <div class="immaginedottore">
+                        <img :src="dottore.img" :alt="dottore.nome">
+                        <div class="didascalia">
+                            <div class="nome">
+                                {{ dottore.nome }}
+                            </div>
+                            <div>
+                                {{ dottore.lavoro }}
+                            </div>
+                            <div class="infolavoro">
+                                {{ dottore.info }}
+                            </div>
+                            <div class="social">
+                                <span class="facebook">
+                                    <font-awesome-icon icon="fa-brands fa-square-facebook" />
+                                </span>
+                                <span class="twitter">
+                                    <font-awesome-icon icon="fa-brands fa-square-twitter" />
+                                </span>
+                                <span class="instagram">
+                                    <font-awesome-icon icon="fa-brands fa-square-instagram" />
+                                </span>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 </template>
 <style lang="scss" scoped>
 .contenitoremain {
@@ -81,9 +81,12 @@ export default{
     margin-bottom: 80px;
     margin: 0 auto;
 }
+
 .descrizione {
-        text-align: center;
-    }
+    text-align: center;
+}
+
+
 .sezione2 {
     background-color: #f7f7f7;
     padding-top: 80px;
@@ -97,7 +100,9 @@ export default{
         width: 100%;
         padding-bottom: 40px;
     }
-
+    .card:hover{
+        cursor: pointer;
+    }
     .card {
         margin-left: 20px;
         background-color: white;
@@ -125,6 +130,7 @@ export default{
     .social {
         font-size: 35px;
         padding-bottom: 30px;
+        cursor: pointer;
     }
 
     .twitter {
@@ -141,5 +147,6 @@ export default{
         color: #3f729b
     }
 }
+
 
 </style>
