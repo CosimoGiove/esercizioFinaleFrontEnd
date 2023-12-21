@@ -75,20 +75,22 @@ export default {
     .text,
     #email,
     #numero {
-        font-size: 18px;
+        font-size: 20px;
         margin-top: 30px;
         background-color: rgba(0,0,0, 0.1);
-        border: 1px solid white;
+        border: 1px solid #9ca9ae;
         color: #aaa9a9;
+        padding: 5px 0px;
     }
 
     #data {
-        width: 210px;
-        padding: 3px;
+        width: 230px;
         margin-top: 30px;
         background-color: rgba(0,0,0, 0.1);
-        border: 1px solid white;
+        border: 1px solid #9ca9ae;
         color: #aaa9a9;
+        padding: 5px 0px;
+        font-size: 20px;
     }
 
     #testoappuntamento {
