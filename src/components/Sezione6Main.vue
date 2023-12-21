@@ -77,12 +77,18 @@ export default {
     #numero {
         font-size: 18px;
         margin-top: 30px;
+        background-color: rgba(0,0,0, 0.1);
+        border: 1px solid white;
+        color: #aaa9a9;
     }
 
     #data {
         width: 210px;
         padding: 3px;
         margin-top: 30px;
+        background-color: rgba(0,0,0, 0.1);
+        border: 1px solid white;
+        color: #aaa9a9;
     }
 
     #testoappuntamento {
