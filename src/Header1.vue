@@ -92,7 +92,7 @@ button {
 .jumbotron {
     width: 60%;
     margin: 0 auto;
-    margin-top: 122px;
+    margin-top: 100px;
 }
 
 img {
