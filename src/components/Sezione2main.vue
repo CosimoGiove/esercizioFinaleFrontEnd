@@ -36,12 +36,14 @@ export default {
 <template>
     <section>
         <div class="sezione2">
+            <!--immagine + descrizione-->
             <div class="contenitoremain">
                 <div class="descrizione infodottore" v-for="info in store.Dottore">
                     <img :src="info.img" alt="">
                     <descrizione :titolo="info.titolo" :descrizione="info.descrizione"></descrizione>
                 </div>
             </div>
+            <!--immagini dottore-->
             <div class="carddottore contenitoremain">
                 <div v-for="dottore in infoDottore" class="card">
                     <div class="contenuto">
@@ -59,6 +61,7 @@ export default {
                             <div class="infolavoro">
                                 {{ dottore.info }}
                             </div>
+                            <!--icone social-->
                             <div class="social">
                                 <span class="facebook">
                                     <font-awesome-icon icon="fa-brands fa-square-facebook" />
@@ -110,13 +113,15 @@ export default {
         transform: translateZ(80px);
         box-shadow: 0 0 15px 10px rgba(0, 0, 0, 0.5);
     }
-    .card:hover .contenuto{
+
+    .card:hover .contenuto {
         opacity: 1;
         font-size: 45px;
         color: red;
     }
-    .card:hover .immaginedottore img{
-        border-top: 4px solid  green;
+
+    .card:hover .immaginedottore img {
+        border-top: 4px solid green;
     }
 
     .contenuto {

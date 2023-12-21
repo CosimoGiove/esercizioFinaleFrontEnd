@@ -19,10 +19,12 @@ export default {
             <div class="contenitoremain">
                 <div class="descrizione infodottore" v-for="info in store.strutture">
                     <img :src="info.img" :alt="info.titolo">
+                    <!-- descrizione-->
                     <div v-for="struttura in store.strutture">
                         <VisitaLeStrutture :immagine="struttura.img" :titolo="struttura.titolo"
                             :descrizione="struttura.descrizione"></VisitaLeStrutture>
                     </div>
+                    <!--bottone-->
                     <div class="play">
                         <img src="../../public/img/play-icon.png" alt="scrivania">
                     </div>

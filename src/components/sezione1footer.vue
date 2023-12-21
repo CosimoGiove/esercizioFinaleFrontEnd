@@ -34,6 +34,7 @@ export default {
 <template>
     <section class="sezione8">
         <div class="piedipagina">
+            <!--primo container flex-->
             <div class="piedipaginasx">
                 <div v-for="footer in piedipagina">
                     <img :src="footer.img" alt="">
@@ -43,6 +44,7 @@ export default {
                     <div class="contatto">
                         {{ footer.contatto }}
                     </div>
+                    <!--icone social-->
                     <div class="iconesocial">
                         <span class="facebook">
                             <font-awesome-icon icon="fa-brands fa-square-facebook" />
@@ -59,18 +61,22 @@ export default {
                     </div>
                 </div>
             </div>
+            <!--secondo container flex-->
             <div class="piedipaginacentrale">
                 <div v-for="footer in contatto">
+                    <!--titolo-->
                     <div class="titolo">
                         {{ footer.titolo }}
                         <hr>
                     </div>
+                    <!--contatto-->
                     <div class="contenitorecontatto">
                         <span class="iconacontatto">
                             <font-awesome-icon icon="fa-solid fa-location-dot" />
                         </span>
                         <span class="luogo">{{ footer.luogo }}</span>
                     </div>
+                    <!--icone social-->
                     <div>
                         <span class="iconacontatto">
                             <font-awesome-icon icon="fa-solid fa-phone" />
@@ -82,12 +88,15 @@ export default {
                     </div>
                 </div>
             </div>
+            <!--terzo container flex-->
             <div class="piedipaginadx">
                 <div v-for="reparti in reparto">
+                    <!--titolo-->
                     <div class="titolo">
                         {{ reparti.titolo }}
                         <hr>
                     </div>
+                    <!-- lista di reparti-->
                     <ul>
                         <li v-for="repartoSpecifico in reparti.reparti">
                             <div>
@@ -120,7 +129,8 @@ export default {
         background-color: white;
         cursor: pointer;
     }
-    .btnfooter:hover{
+
+    .btnfooter:hover {
         background-color: black;
         color: white;
     }

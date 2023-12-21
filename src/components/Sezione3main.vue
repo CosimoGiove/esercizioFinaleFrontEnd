@@ -19,10 +19,12 @@ export default {
     <section>
         <div class="sezione3">
             <div class="contenitoremain">
+                <!-- img + descrizione-->
                 <div class="descrizione infodottore" v-for="info in store.servizi">
                     <img :src="info.img" :alt="info.titolo">
                     <descrizione :titolo="info.titolo" :descrizione="info.descrizione"></descrizione>
                 </div>
+                <!--servizi dei dottori-->
                 <div class="servizi">
                     <div class="servizidottore" v-for="icone in store.serviziDottore">
                         <icone :img="icone.img" :titolo="icone.titolo" :descrizione="icone.descrizione"></icone>

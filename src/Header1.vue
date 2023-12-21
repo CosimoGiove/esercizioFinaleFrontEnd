@@ -19,9 +19,11 @@ export default {
 <template>
     <header>
         <div class="contenitoreheader">
+            <!--logo-->
             <div>
                 <img :src="logo" alt="logo">
             </div>
+            <!--nav-->
             <div>
                 <div class="nav" v-for="navs in nav">
                     <navigazione :nav="navs"></navigazione>
@@ -29,6 +31,7 @@ export default {
                 <button>Make Appointment </button>
             </div>
         </div>
+        <!--jumbotron-->
         <div class="jumbotron">
             <h1>
                 <span>Caring </span>
@@ -39,6 +42,7 @@ export default {
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptas voluptatum nam consectetur voluptatem,
                 animi,voluplatum
             </p>
+            <!--bottone-->
             <button class="bottone">Learn more</button>
         </div>
     </header>
@@ -104,17 +108,35 @@ img {
 .jumbotron h1 {
     font-size: 60px;
 }
-.bottone{
+
+.bottone {
     animation: bottone 5s infinite;
 }
+
 /* keyframe */
 @keyframes bottone {
-    0%{transform: rotate(0deg);}
-    20%{transform: rotate(10deg); box-shadow: 3px 3px 3px 3px black;}
-    40%{transform: rotate(0deg); box-shadow: 3px 3px 3px 1px black}
-    60%{transform: rotate(-10deg);box-shadow: 3px 3px 3px 3px black;}
-    100%{transform: rotate(0deg);}
-    
-}
+    0% {
+        transform: rotate(0deg);
+    }
 
+    20% {
+        transform: rotate(10deg);
+        box-shadow: 3px 3px 3px 3px black;
+    }
+
+    40% {
+        transform: rotate(0deg);
+        box-shadow: 3px 3px 3px 1px black
+    }
+
+    60% {
+        transform: rotate(-10deg);
+        box-shadow: 3px 3px 3px 3px black;
+    }
+
+    100% {
+        transform: rotate(0deg);
+    }
+
+}
 </style>

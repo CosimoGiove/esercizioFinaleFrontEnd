@@ -16,9 +16,11 @@ export default {
 </script>
 <template>
     <section class="sezione6">
+        <!--titolo + descrizione-->
         <div v-for="appuntamento in store.appuntamenti" class="appuntamenti contenitoremain">
             <descrizione :titolo="appuntamento.titolo" :descrizione="appuntamento.descrizione"></descrizione>
         </div>
+        <!--input-->
         <div class="contenitoreinput">
             <div>
                 <input type="text" placeholder="name" class="text">
@@ -33,6 +35,7 @@ export default {
                 <input type="date" name="data" id="data">
             </div>
         </div>
+        <!--input invio + bottone-->
         <div class="contenitoretesto1">
             <input type="text" name="testo" id="testoappuntamento" placeholder="How can we help?*">
             <button class="btninvio">
@@ -48,6 +51,7 @@ export default {
     margin-bottom: 80px;
     margin: 0 auto;
 }
+
 .sezione6 {
     background-image: url(../public/img/make-an-appointment.jpg);
     background-position: center;

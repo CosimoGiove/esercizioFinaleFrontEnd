@@ -16,19 +16,21 @@ export default {
 </script>
 <template>
     <section class="sezione5">
+        <!-- primo container-->
         <div v-for="emergenza in store.assistenza" class="emergenza">
             <ServiziPrincipali :titolo="emergenza.titolo" :img="emergenza.img" :testo="emergenza.testo">
             </ServiziPrincipali>
             <button class="btnem">Learn more</button>
         </div>
+        <!--secondo container-->
         <div>
             <div v-for="emergenza in store.espertodiagnostico" class="esperto">
                 <ServiziPrincipali :titolo="emergenza.titolo" :img="emergenza.img" :testo="emergenza.testo">
                 </ServiziPrincipali>
                 <button class="btnes">Learn more</button>
             </div>
-
         </div>
+        <!--terzo container-->
         <div>
             <div v-for="emergenza in store.riabilitazione" class="riabilitazione">
                 <ServiziPrincipali :titolo="emergenza.titolo" :img="emergenza.img" :testo="emergenza.testo">
@@ -44,13 +46,16 @@ export default {
     text-align: center;
     line-height: 30px;
     color: white;
-    .emergenza:hover{
+
+    .emergenza:hover {
         opacity: 0.8;
     }
-    .esperto:hover{
+
+    .esperto:hover {
         opacity: 0.8;
     }
-    .riabilitazione:hover{
+
+    .riabilitazione:hover {
         opacity: 0.8;
     }
 
@@ -82,7 +87,8 @@ export default {
         cursor: pointer;
 
     }
-    button:hover{
+
+    button:hover {
         background-color: lightblue;
         color: black;
     }
@@ -98,5 +104,4 @@ export default {
     .btnri {
         background-color: #327ec7;
     }
-}
-</style>
+}</style>

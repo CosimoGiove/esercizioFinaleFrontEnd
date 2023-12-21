@@ -15,10 +15,11 @@ export default {
     <section class="sezione2footer">
         <div class="copyright">
             <div>
+                <!--icona copyright-->
                 <div class="iconacopy">
                     <font-awesome-icon icon="fa-regular fa-copyright" />
                 </div>
-
+                <!-- lista footer-->
                 <ul class="iconacopy">
                     <li v-for="copy in copyright">
                         {{ copy }}
