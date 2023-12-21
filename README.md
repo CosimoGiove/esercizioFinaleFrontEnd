@@ -12,7 +12,7 @@ ho realizzato questo fantastico sito di uno studio medico.
 mi sono concentrato  componente per componente partendo dall' header una volta terminato l' header
 ho iniziato a lavorare  al main.
 
-il main viene cosi siddiviso: 
+## il main viene cosi siddiviso: 
 - sezione1
 - sezione2
 - sezione3
@@ -34,6 +34,9 @@ così facendo mi sono risparmiato tantissimo tempo.
 
 ho utilizzato per questo layout  open sans
 ho implementato il progetto con una favicon che ho ricreato io a mano, e importata nel progetto.
+- ho implementato il tutto con effetti hover sui pulsanti
+- ho aggiunto animazioni al sito per renderlo più accattivante e moderno.
+
 -
 
 
