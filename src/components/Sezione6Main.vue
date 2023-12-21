@@ -88,7 +88,7 @@ export default {
         margin-top: 30px;
         background-color: rgba(0,0,0, 0.1);
         border: 1px solid #9ca9ae;
-        color: #aaa9a9;
+        color: #52555A;
         padding: 5px 0px;
         font-size: 20px;
     }
@@ -97,6 +97,10 @@ export default {
         margin-top: 30px;
         width: 100%;
         padding-bottom: 100px;
+        background-color: rgba(0,0,0, 0.1);
+        border: 1px solid #9ca9ae;
+        color:#9ca9ae;
+        padding-top: 5px;
     }
 
     .contenitoretesto1 {
