@@ -52,4 +52,5 @@ export default {
     box-shadow: 0 0 15px 10px rgba(0, 0, 0, 0.5);
     transition: 0.5s;
     cursor: pointer;
+    border-radius: 10px;
 }</style>
