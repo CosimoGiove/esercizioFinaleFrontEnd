@@ -45,7 +45,7 @@ export default {
             <div class="carddottore contenitoremain">
                 <div v-for="dottore in infoDottore" class="card">
                     <div class="contenuto">
-                        <font-awesome-icon icon="fa-regular fa-bookmark" />
+                        <font-awesome-icon icon="fa-regular fa-heart" />
                     </div>
                     <div class="immaginedottore">
                         <img :src="dottore.img" :alt="dottore.nome">
@@ -113,7 +113,7 @@ export default {
     .card:hover .contenuto{
         opacity: 1;
         font-size: 45px;
-        color: green;
+        color: red;
     }
     .card:hover .immaginedottore img{
         border-top: 4px solid  green;
