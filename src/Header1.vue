@@ -50,7 +50,7 @@ header {
     color: white;
     background-position: top;
     background-size: cover;
-    height: 650px
+    height: 650px;
 }
 
 .contenitoreheader {
@@ -116,4 +116,5 @@ img {
     100%{transform: rotate(0deg);}
     
 }
+
 </style>

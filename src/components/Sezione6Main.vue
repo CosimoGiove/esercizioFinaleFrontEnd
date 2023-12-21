@@ -100,6 +100,7 @@ export default {
         text-transform: uppercase;
         background-color: #3aafbf;
         border: none;
+        cursor: pointer;
     }
 }
 </style>

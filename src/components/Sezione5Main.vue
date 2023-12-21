@@ -44,6 +44,15 @@ export default {
     text-align: center;
     line-height: 30px;
     color: white;
+    .emergenza:hover{
+        opacity: 0.8;
+    }
+    .esperto:hover{
+        opacity: 0.8;
+    }
+    .riabilitazione:hover{
+        opacity: 0.8;
+    }
 
     .emergenza {
         background-color: #3aafbf;
@@ -70,7 +79,12 @@ export default {
         margin-top: 10px;
         color: white;
         border: 2px solid white;
+        cursor: pointer;
 
+    }
+    button:hover{
+        background-color: lightblue;
+        color: black;
     }
 
     .btnem {

@@ -55,5 +55,6 @@ export default {
 .play {
     margin-top: 30px;
     color: #358fc4;
+    cursor: pointer;
 }
 </style>

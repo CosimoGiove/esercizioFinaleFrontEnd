@@ -44,6 +44,9 @@ export default {
             </div>
             <div class="carddottore contenitoremain">
                 <div v-for="dottore in infoDottore" class="card">
+                    <div class="contenuto">
+                        <font-awesome-icon icon="fa-regular fa-bookmark" />
+                    </div>
                     <div class="immaginedottore">
                         <img :src="dottore.img" :alt="dottore.nome">
                         <div class="didascalia">
@@ -80,6 +83,7 @@ export default {
     margin-top: 80px;
     margin-bottom: 80px;
     margin: 0 auto;
+    perspective: 900px;
 }
 
 .descrizione {
@@ -100,13 +104,35 @@ export default {
         width: 100%;
         padding-bottom: 40px;
     }
-    .card:hover{
+
+    .card:hover {
         cursor: pointer;
+        transform: translateZ(80px);
+        box-shadow: 0 0 15px 10px rgba(0, 0, 0, 0.5);
     }
+    .card:hover .contenuto{
+        opacity: 1;
+        font-size: 45px;
+        color: green;
+    }
+    .card:hover .immaginedottore img{
+        border-top: 4px solid  green;
+    }
+
+    .contenuto {
+        position: absolute;
+        top: 0px;
+        left: 5px;
+        opacity: 0;
+    }
+
     .card {
         margin-left: 20px;
         background-color: white;
         margin-top: 80px;
+        position: relative;
+        transform-style: preserve-3d;
+        transition: 0.5s;
     }
 
     .didascalia {
@@ -147,6 +173,4 @@ export default {
         color: #3f729b
     }
 }
-
-
 </style>

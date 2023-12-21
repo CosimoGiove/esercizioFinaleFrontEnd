@@ -118,6 +118,11 @@ export default {
         border: 1px solid black;
         color: #333333;
         background-color: white;
+        cursor: pointer;
+    }
+    .btnfooter:hover{
+        background-color: black;
+        color: white;
     }
 
     .piedipaginasx {
@@ -139,6 +144,7 @@ export default {
         height: 30px;
         border-radius: 50%;
         vertical-align: middle;
+        cursor: pointer;
     }
 
     .piedipaginadx {
@@ -152,6 +158,7 @@ export default {
     .iconesocial {
         font-size: 30px;
         margin-top: 30px;
+        cursor: pointer;
     }
 
     .facebook {

@@ -35,4 +35,5 @@ export default {
 main {
     color: #333c4e;
 }
+
 </style>

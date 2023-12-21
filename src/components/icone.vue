@@ -5,7 +5,8 @@ export default {
 }
 </script>
 <template>
-        <div class="contenitore">
+    <div class="contenitore">
+        <div class="prospettiva">
             <div class="immagine">
                 <img :src="img" :alt="titolo">
             </div>
@@ -16,22 +17,39 @@ export default {
                 {{ descrizione }}
             </div>
         </div>
+    </div>
 </template>
 <style lang="scss" scoped>
-.immagine{
+.immagine {
     text-align: center;
 }
-.titolo{
+
+.titolo {
     text-transform: uppercase;
     margin-top: 10px;
 }
-.descrizione{
+
+.descrizione {
     line-height: 35px;
     margin-top: 20px;
     color: #a2aaaf;
 }
-.contenitore{
+
+.contenitore {
     padding-right: 20px;
+    perspective: 900px;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: 0.5s;
+}
+.prospettiva{
+    padding-top: 10px;
+    padding-left: 4px;
 }
 
-</style>
+.contenitore:hover .prospettiva{
+    transform: translateZ(50px);
+    box-shadow: 0 0 15px 10px rgba(0, 0, 0, 0.5);
+    transition: 0.5s;
+    cursor: pointer;
+}</style>
